@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+   
+
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="google-site-verification" content="zBcYUhVJRLx_8osrL7wQehKFdfrSvnuKc6RC_QJWzTs" />
+      <!-- favicon -->
+      <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
+      <!-- Fonts Awesome CSS -->
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/fontawesome/css/all.min.css">
+      <!-- jquery-ui css -->
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/jquery-ui/jquery-ui.min.css">
+      <!-- modal video css -->
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/modal-video/modal-video.min.css">
+      <!-- light box css -->
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/lightbox/dist/css/lightbox.min.css">
+      <!-- slick slider css -->
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="/assets/vendors/slick/slick-theme.css">
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+      <title>Vaishnavi Tirupati Tours </title>
+   <style>
+
+    /* Styles for the popup */
+    #popup {
+
+      display: none;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    #popup .popup_overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.268);
+      width: 100%;
+      height: 100%;
+    }
+
+    #popup .popup_info{
+      max-width: 700px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      z-index: 10;
+    }
+
+      /* Styles for the success message */
+      #success-message {
+         color: green;
+         font-weight: bold;
+      }
+
+      </style>
+   </head>
+   <body class="home">
+      <!-- <div id="siteLoader" class="site-loader">
+         <div class="preloader-content">
+            <img src="/assets/images/loader1.gif" alt="">
+         </div>
+      </div> -->
+      <div id="page" class="full-page">
+         
+         <%- include('./partials/header') -%>
+
+         <main id="content" class="site-main">
+
+            <div id="popup">
+               <div class="popup_overlay" onclick="closePopup()"></div>
+               <div class="popup_info">
+                  <h2>Your Details have been Submitted Successfully</h2>
+                  <p id="success-message">Thank you for submitting your details!</p>
+                  <button onclick="closePopup()">Close</button>
+               </div>
+            </div>
+
+            <div id="loader">
+               <div class="loader"></div>
+             </div>
+
+
+            <!-- Home slider html start -->
+            <section  class="home-slider-section" >
+               <div class="home-slider">
+                  <div class="home-banner-items">
+                     <div class="banner-inner-wrap" style="background-image: url(assets/images/banner1.jpg);"></div>
+                        <div class="banner-content-wrap">
+                           <div class="container">
+                              <div class="banner-content text-center pt-4">
+                                 <h2 class="banner-title">CHENNAI TO TIRUPATI ONE DAY TOUR PACKAGE</h2>
+                                 <p>Embark on a spiritual journey with Vaishnavi Tirupati Tours, exploring ancient temples and sacred sites to uncover profound enlightenment.</p>
+                                 <a href="#bookingForm" class="button-primary">BOOK NOW</a>
+                              </div>
+                           </div>
+                        </div>
+                     <div class="overlay"></div>
+                  </div>
+                  <div class="home-banner-items">
+                     <div class="banner-inner-wrap" style="background-image: url(assets/images/kovil.jpg);"></div>
+                        <div class="banner-content-wrap">
+                           <div class="container">
+                              <div class="banner-content text-center pt-4">
+                                 <h2 class="banner-title">CHENNAI TO TIRUPATI TWO DAYS TOUR PACKAGE</h2>
+                                 <p>Discover the essence of spiritual exploration with Vaishnavi Tirupati Tours, guiding you through sacred lands and ancient rituals.</p>
+                                 <a href="#bookingForm" class="button-primary">BOOK Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     <div class="overlay"></div>
+                  </div>
+                  <div class="home-banner-items">
+                     <div class="banner-inner-wrap" style="background-image: url(assets/images/banner2.jpg);"></div>
+                        <div class="banner-content-wrap">
+                           <div class="container">
+                              <div class="banner-content text-center pt-5">
+                                 <h2 class="banner-title">TIRUPATI CAR RENTALS</h2>
+                                 <p>Let Vaishnavi Tirupati Tours be your gateway to spiritual awakening, as you embark on a pilgrimage to uncover the sacred mysteries of the world.</p>
+                                 <a href="#bookingForm" class="button-primary">BOOK</a>
+                              </div>
+                           </div>
+                        </div>
+                     <div class="overlay"></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- slider html start -->
+            <!-- Home search field html start -->
+            <section id="bookingForm">
+               <div class="trip-search-section shape-search-section">
+                  <div class="slider-shape"></div>
+                  <div class="container">
+                     <div class="trip-search-inner white-bg d-flex">
+                        <div class="input-group">
+                           <label> Name* </label>
+                           <input type="text" name="name" id="name" placeholder="Enter the name">
+                        </div>
+                        <div class="input-group">
+                           <label> Phone Number* </label>
+                           <input type="text" name="phone" id="phone" placeholder="Enter the number" minlength="10">
+                        </div>
+                        <div class="input-group">
+                           <label> Number of peoples* </label>
+                           <input type="text" name="count" id="count" placeholder="No.of People">
+                        </div>
+                        <div class="input-group">
+                           <label> packages* </label>
+                           <select name="packages" id="packages">
+                              <option value="Chennai To Tirupati One day Tour Package">Chennai To Tirupati One day Tour Package</option>
+                              <option value="Chennai To Tirupati Two days Tour Package">Chennai To Tirupati Two days Tour Package</option>
+                              <option value="Tirupati car Rentals">Tirupati car Rentals</option>
+                           </select>
+                        </div>
+                        <div class="input-group">
+                           <label> Vehicle type* </label>
+                           <select name="car" id="car">
+                              <option value="dezire">Dezire</option>
+                              <option value="etios">Etios</option>
+                              <option value="innova">Innova</option>
+                              <option value="innovaCrysta">Innova crysta</option>
+                              <option value="primeTempo">Prime Tempo</option>
+                              <option value="tavera">Tavera</option>
+                           </select>
+                        </div>
+                        <div class="input-group width-col-3">
+                           <label> Trip Date* </label>
+                           <i class="far fa-calendar"></i>
+                           <input class="input-date-picker" type="text" name="date" id="date" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly">
+                        </div>
+                        <!-- <div class="input-group width-col-3">
+                           <label> Checkout Date* </label>
+                           <i class="far fa-calendar"></i>
+                           <input class="input-date-picker" type="text" name="s" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly">
+                        </div> -->
+                        <div class="input-group width-col-3">
+                           <input type="submit" name="travel-search" id="enquiry" value="INQUIRE NOW">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- search search field html end -->
+
+            <!-- Popular Destination starts -->
+            <section id="services" class="destination-section">
+               <div class="container">
+                  <div class="section-heading text-center">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <h5 class="dash-style">POPULAR DESTINATION</h5>
+                           <h2>OUR TIRUPATI TIRUMALA SERVICES</h2>
+                           <p>Discover divine journeys with Vaishnavi Tirupati Tours, offering Chennai to Tirupati 1-day and 2-day packages, convenient Tirupati car rentals, and captivating Chennai to Kalahasti tours!</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="destination-inner destination-three-column services">
+                     <div class="row">
+                        <!-- <div class="col-lg-7">
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/img1.jpg" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#">THAILAND</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                          <a href="#">Disney Land</a>
+                                       </h3>
+                                       <div class="rating-start" title="Rated 5 out of 4">
+                                          <span style="width: 53%"></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/img2.jpg" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#">NORWAY</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                          <a href="#">Besseggen Ridge</a>
+                                       </h3>
+                                       <div class="rating-start" title="Rated 5 out of 5">
+                                          <span style="width: 100%"></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> -->
+                        <div class="col-lg-6">
+                           <div class="row">
+                              <div class="col-md-6 col-xl-12">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/kovil.jpg" class="w-100" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#bookingForm">BOOK NOW</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                         Chennai to Tirupati One day package
+                                       </h3>
+                                      
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-xl-12 ">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/perumal.jpg" class="w-100" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#bookingForm">BOOK NOW</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                         Chennai to Tirupati Two days Package
+                                       </h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="row">
+                              <div class="col-md-6 col-xl-12">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/kovil2.jpg" class="w-100" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#bookingForm">BOOK NOW</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                          Tirupati Car rentals
+                                       </h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-xl-12">
+                                 <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                       <img src="assets/images/kalahasti.jpg" class="w-100" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                       <a href="#bookingForm">BOOK NOW</a>
+                                    </div>
+                                    <div class="desti-content">
+                                       <h3>
+                                          Chennai to Kalahasti package
+                                       </h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- <div class="btn-wrap text-center">
+                        <a href="#" class="button-primary">MORE DESTINATION</a>
+                     </div> -->
+                  </div>
+               </div>
+            </section>
+            <!-- Popular Destination ends -->
+
+
+            <!-- Popular packages start -->
+            <section id="package" class="package-section">
+               <div class="container">
+                  <div class="section-heading text-center">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <h5 class="dash-style">EXPLORE GREAT PLACES</h5>
+                           <h2>OUR PACKAGES</h2>
+                           <p>"Explore Vaishnavi Tirupati Tours' diverse fleet of vehicles, ensuring comfort and reliability for all your travel requirements."</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="package-inner">
+                     <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="package-wrap">
+                              <figure class="feature-image">
+                                 <a href="#">
+                                    <img src="assets/images/dezire.png" alt="">
+                                 </a>
+                              </figure>
+                             
+                              <div class="package-content-wrap pt-5">
+                                 <div class="package-meta text-center">
+                                    <ul>
+                                       <li>
+                                          <b>Dezire</b>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="package-content pt-4">
+                                    <h3>
+                                       <a href="#">Chennai to tirupati Tour Packages</a>
+                                    </h3>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>1-Person</b></td>
+                                             <td> ₹7000</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>2-Persons</b></td>
+                                             <td> ₹8500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>3-Persons</b></td>
+                                             <td> ₹9500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>4-Persons</b></td>
+                                             <td> ₹10500</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="btn-wrap">
+                                       <a href="#bookingForm" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="package-wrap">
+                              <figure class="feature-image">
+                                 <a href="#">
+                                    <img src="assets/images/etios.png" alt="">
+                                 </a>
+                              </figure>
+                             
+                              <div class="package-content-wrap pt-2">
+                                 <div class="package-meta text-center">
+                                    <ul>
+                                       <li>
+                                          <b>Etios</b>
+                                       </li>
+                                       
+                                    </ul>
+                                 </div>
+                                 <div class="package-content pt-4">
+                                    <h3>
+                                       <a href="#">Chennai to tirupati Tour Packages</a>
+                                    </h3>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>1-Person</b></td>
+                                             <td> ₹ 7000</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>2-Persons</b></td>
+                                             <td> ₹8500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>3-Persons</b></td>
+                                             <td> ₹9500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>4-Persons</b></td>
+                                             <td> ₹10500</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="btn-wrap">
+                                       <a href="#bookingForm" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="package-wrap">
+                              <figure class="feature-image">
+                                 <a href="#">
+                                    <img src="assets/images/innova.png" alt="">
+                                 </a>
+                              </figure>
+                              
+                              <div class="package-content-wrap">
+                                 <div class="package-meta text-center">
+                                    <ul>
+                                       <li>
+                                          <b>Innova</b>
+                                       </li>
+                                       
+                                    </ul>
+                                 </div>
+                                 <div class="package-content pt-4">
+                                    <h3>
+                                       <a href="#">Chennai to tirupati Tour Packages</a>
+                                    </h3>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>4-Persons</b></td>
+                                             <td> ₹ 13000</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>5-Persons</b></td>
+                                             <td> ₹14200</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>6-Persons</b></td>
+                                             <td> ₹15500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>7-Persons</b></td>
+                                             <td> ₹17000</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="btn-wrap">
+                                       <a href="#bookingForm" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="package-wrap">
+                              <figure class="feature-image">
+                                 <a href="#">
+                                    <img src="assets/images/crysta.png" alt="">
+                                 </a>
+                              </figure>
+                             
+                              <div class="package-content-wrap pt-5">
+                                 <div class="package-meta text-center">
+                                    <ul>
+                                       <li>
+                                          <b>Innova Crysta</b>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="package-content pt-4">
+                                    <h3>
+                                       <a href="#">Chennai to tirupati Tour Packages</a>
+                                    </h3>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>4-Persons</b></td>
+                                             <td> ₹14000</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>5-Persons</b></td>
+                                             <td> ₹15200</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>6-Persons</b></td>
+                                             <td> ₹16500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>7-Persons</b></td>
+                                             <td> ₹18000</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="btn-wrap">
+                                       <a href="#bookingForm" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="package-wrap">
+                              <figure class="feature-image">
+                                 <a href="#">
+                                    <img src="assets/images/tempo.png" alt="">
+                                 </a>
+                              </figure>
+                             
+                              <div class="package-content-wrap pt-2">
+                                 <div class="package-meta text-center">
+                                    <ul>
+                                       <li>
+                                          <b>Prime Tempo</b>
+                                       </li>
+                                       
+                                    </ul>
+                                 </div>
+                                 <div class="package-content pt-4">
+                                    <h3>
+                                       <a href="#">Chennai to tirupati Tour Packages</a>
+                                    </h3>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>9-Persons</b></td>
+                                             <td> ₹24000</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>10-Persons</b></td>
+                                             <td> ₹25500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>11-Persons</b></td>
+                                             <td> ₹26500</td>
+                                          </tr>
+                                          <tr>
+                                             <td><b>12-Persons</b></td>
+                                             <td> ₹27800</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="btn-wrap">
+                                       <a href="#bookingForm" class="button-text width-6">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- <div class="btn-wrap text-center">
+                        <a href="#" class="button-primary">VIEW ALL PACKAGES</a>
+                     </div> -->
+                  </div>
+               </div>
+            </section>
+            <!-- Popular packages ends -->
+
+            <section class="mb-5">
+               <div class="container bg-danger px-4 py-4 rounded">
+                  <h3 class="text-white text-center font-weight-b m-0">The website doesn't have the package price right now. You can only see the price if you book 45 days in advance. To book now, just call this number : 98844 13829.</h3>
+               </div>
+            </section>
+            
+            <!-- pricing section  start -->
+            <section id="pricing" class="special-section pt-5">
+               <div class="container">
+                  <div class="section-heading text-center">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <h5 class="dash-style">TRAVEL OFFER & DISCOUNT</h5>
+                           <h2>SPECIAL TRAVEL OFFER</h2>
+                           <p>"Experience divine blessings firsthand with Vaishnavi Tirupati Tours' exclusive Special Entry, NRI, and VIP Darshan options in Tirupati, ensuring a seamless and privileged pilgrimage experience."</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="special-inner">
+                     <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                           <div class="special-item">
+                              <figure class="special-img">
+                                 <img src="assets/images/seerga.png" class="price-img" alt="" style="width:500px;">
+                              </figure>
+                              <!-- <div class="badge-dis">
+                                 <span>
+                                    <strong>20%</strong>
+                                    off
+                                 </span>
+                              </div> -->
+                              <div class="special-content">
+                                 <div class="meta-cat">
+                                    <a href="#">SEEGRA DARSHAN</a>
+                                 </div>
+                                 <h4>
+                                    Embrace Expedited Sanctity with Special Entry Darshan.
+                                 </h4>
+                                 <div class="package-price">
+                                    <a href="#bookingForm" style="color: #f56960;">Book</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                           <div class="special-item">
+                              <figure class="special-img">
+                                 <img src="assets/images/Vip.jpg" class="price-img" alt="">
+                              </figure>
+                              <div class="special-content">
+                                 <div class="meta-cat">
+                                    <a href="#">VIP DARSHAN</a>
+                                 </div>
+                                 <h4>
+                                    Discover Divine Access with VIP Darshan.
+                                 </h4>
+                                 <div class="package-price">
+                                    <a href="#bookingForm" style="color: #f56960;">Book</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                           <div class="special-item">
+                              <figure class="special-img">
+                                 <img src="assets/images/nri.png" class="price-img" alt="">
+                              </figure>
+                              <div class="special-content">
+                                 <div class="meta-cat">
+                                    <a href="#">NRI DARSHAN</a>
+                                 </div>
+                                 <h4>
+                                    Experience Global Devotion with NRI Darshan.
+                                 </h4>
+                                 <div class="package-price">
+                                    <a href="#bookingForm" style="color: #f56960;">Book</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- Pricing section end -->
+
+            <!-- Gallery Section start -->
+            <section id="gallery" class="best-section py-2">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-9">
+                        <div class="section-heading">
+                           <h5 class="dash-style">OUR TOUR GALLERY</h5>
+                           <h2>TIRUPATI TOUR'S GALLERY</h2>
+                           <p>Discover the beauty of sacred destinations through our captivating gallery, offering glimpses of serene landscapes and architectural marvels curated by Vaishnavi Tirupati Tours.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery-section">
+                  <div class="container">
+                     <div class="gallery-outer-wrap">
+                        <div class="gallery-inner-wrap gallery-container grid">
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/gopuram.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/gopuram.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/perumalwives.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/perumalwives.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/god.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/god.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/Tirupati1.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/Tirupati1.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/front.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/front.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/Tirupati2.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/Tirupati2.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/tirupati.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/kovil22.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                           <div class="single-gallery grid-item">
+                              <figure class="gallery-img">
+                                 <img src="assets/images/sribalaji.jpg" alt="">
+                                 <div class="gallery-title">
+                                    <h3>
+                                       <a href="assets/images/sribalaji.jpg" data-lightbox="lightbox-set">
+                                          Tirupati
+                                       </a>
+                                    </h3>
+                                 </div>
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- Gallery section ends -->
+
+             <!-- Home testimonial section html start -->
+             <div class="testimonial-page-section ">
+               <div class="container">
+                  <div class="section-heading text-center">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <h5 class="dash-style">CLIENT TESTIMONIALS</h5>
+                           <h2>TESTIMONIALS</h2>
+                           <p>Discover the transformative experiences shared by our satisfied customers, highlighting the exceptional service provided by Vaishnavi Tirupati Tours.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row py-5">
+                     <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item text-center">
+                           <figure class="testimonial-img">
+                              <img src="assets/images/Female3.png" alt="">
+                           </figure>
+                           <div class="testimonial-content">
+                              <p>This is the best tour company to go for if you are looking for a comfortable thirupathi & kalahasthi visit. Our driver Mr.Vetrivel was very cooperative and knowledgeable. He know the easy access and process which saves a lot of time during darshan.</p>
+                              <div class="start-wrap">
+                                 <div class="rating-start" title="Rated 5 out of 5">
+                                    <span style="width: 60%"></span>
+                                 </div>
+                              </div>
+                              <h3>Akhila</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item text-center">
+                           <figure class="testimonial-img">
+                              <img src="assets/images/Male.png" alt="">
+                           </figure>
+                           <div class="testimonial-content">
+                              <p>Excellent Service .Thank you so much. We enjoyed our journey with peaceful service.Especially your driver is very polite. well maintained vehicle, very cool  driving. Good value for the Money. Once again thank you 😊🙏</p>
+                              <div class="start-wrap">
+                                 <div class="rating-start" title="Rated 5 out of 5">
+                                    <span style="width: 60%"></span>
+                                 </div>
+                              </div>
+                              <h3>Venkatesh BS</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item text-center">
+                           <figure class="testimonial-img">
+                              <img src="assets/images/Female3.png" alt="">
+                           </figure>
+                           <div class="testimonial-content">
+                              <p>Experience drive. Well maintenance vehicle. Perfect time keep up. Memororable happy journey to all of us. Thank you vaishnavi tour's and travels.</p>
+                              <div class="start-wrap">
+                                 <div class="rating-start" title="Rated 5 out of 5">
+                                    <span style="width: 60%"></span>
+                                 </div>
+                              </div>
+                              <h3>Yamuna S</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- testimonial html end -->
+
+            <!-- Home contact details section html start -->
+            <section id="contact" class="contact-section">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="contact-img" style="background-image: url(assets/images/front.jpg);">
+                        </div>
+                     </div>
+                     <div class="col-lg-9">
+                        <div class="contact-details-wrap">
+                           <div class="row">
+                              <div class="col-sm-4">
+                                 <div class="contact-details">
+                                    <div class="contact-icon">
+                                       <img src="assets/images/icon12.png" alt="">
+                                    </div>
+                                    <ul>
+                                       <li>
+                                          <a href="mailto:vaishnavitirupatitours@gmail.com">vaishnavitirupatitours@gmail.com</span></a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="contact-details">
+                                    <div class="contact-icon">
+                                       <img src="assets/images/icon13.png" alt="">
+                                    </div>
+                                    <ul>
+                                       <li>
+                                          <a href="tel:+917845113829">+917845113829</a>
+                                       </li>
+                                       <li>
+                                          <a href="tel:+919884413829">+919884413829</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <div class="contact-details">
+                                    <div class="contact-icon">
+                                       <img src="assets/images/icon14.png" alt="">
+                                    </div>
+                                    <ul>
+                                       <li>
+                                          No.23, 7th Street,
+                                       </li>
+                                       <li>
+                                          Thendral Nagar, Gramaniyan Garden,
+                                       </li>
+                                       <li>
+                                          Selavoyal, Chennai.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- <div class="contact-btn-wrap">
+                           <h3>LET'S JOIN US FOR MORE UPDATE !!</h3>
+                           <a href="#" class="button-primary">LEARN MORE</a>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--  contact details html end -->
+
+         </main>
+         
+         <%- include('./partials/footer') -%>
+
+         <a id="backTotop" href="#" class="to-top-icon">
+            <i class="fas fa-chevron-up"></i>
+         </a>
+         <!-- custom search field html -->
+            <div class="header-search-form">
+               <div class="container">
+                  <div class="header-search-container">
+                     <form class="search-form" role="search" method="get" >
+                        <input type="text" name="s" placeholder="Enter your text...">
+                     </form>
+                     <a href="#" class="search-close">
+                        <i class="fas fa-times"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         <!-- header html end -->
+         <!-- call button -->
+         <a href="tel:+917845113829" class="float1" target="_blank">
+            <i class="fa fa-phone my-float1"></i>
+         </a>
+
+         <!-- whatsapp button -->
+         <a href="https://api.whatsapp.com/send/?phone=+917845113829&text=Hello Vaishnavi Tirupati Tours!&type=phone_number&app_absent=0" class="float" target="_blank">
+            <img src="/assets/images/whatsapp.png">
+         </a>
+      </div>
+
+     
+      <script src="/assets/js/jquery.js"></script>
+      <script src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+      <script src="/assets/vendors/countdown-date-loop-counter/loopcounter.js"></script>
+      <script src="/assets/js/jquery.counterup.js"></script>
+      <script src="/assets/vendors/modal-video/jquery-modal-video.min.js"></script>
+      <script src="/assets/vendors/masonry/masonry.pkgd.min.js"></script>
+      <script src="/assets/vendors/lightbox/dist/js/lightbox.min.js"></script>
+      <script src="/assets/vendors/slick/slick.min.js"></script>
+      <script src="/assets/js/jquery.slicknav.js"></script>
+      <script src="/assets/js/custom.min.js"></script>
+      <script>
+        const name = document.getElementById('name')
+        const phone = document.getElementById('phone')
+        const peopleCount= document.getElementById('count')
+        const packages = document.getElementById('packages')
+        const vehicle = document.getElementById('car')
+        const tripDate = document.getElementById('date')
+
+        const enquiryBtn = document.getElementById("enquiry")
+
+        const loader = document.getElementById("loader");
+        const close = document.getElementById("close")
+
+        function openPopup() {
+               document.getElementById('popup').style.display = 'flex';
+            }
+
+            function closePopup() {
+               document.getElementById('popup').style.display = 'none';
+            }
+       
+        enquiryBtn.addEventListener("click",async()=>{
+
+         if(name.value == '' || phone.value =='' || peopleCount.value =='' || package.value =='' || vehicle.value =='' || tripDate.value == ''){
+            alert("Please do not leave the field empty")
+            return
+        }
+
+         if(phone.value.length !== 10){
+            alert("phone number must be in 10 Digit ")
+            return
+         }
+        
+            let data = {
+               name: name.value,
+               phone: phone.value,
+               peopleCount : peopleCount.value,
+               package : packages.value,
+               vehicle : vehicle.value,
+               tripDate : tripDate.value
+            }
+
+            console.log(data);
+
+            const request = await fetch("/enquiry",{
+               method : "POST",
+               headers : {
+                  'Accept': 'application/json',
+                  "Content-Type" : "application/json",
+               },
+               body : JSON.stringify(data)
+            })
+
+            const response = await request.json()
+            if(response.status == 201){
+               openPopup()
+            }else{
+               alert(response.error)
+               closePopup()
+            }
+        })
+      </script>
+   <script>(function(){var js = "window['__CF$cv$params']={r:'85df7d8fdbf14856',t:'MTcwOTM2MjYyNC4zODgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/g/scripts/jsd/a0d8959cb7d0/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+
+</html>

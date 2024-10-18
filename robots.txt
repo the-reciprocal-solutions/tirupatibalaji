@@ -1,0 +1,2 @@
+User-agent: Googlebot,AdsBot-Google
+Disallow: /restricted-content
